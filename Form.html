@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Art Store</title>
+		<style type="text/css">
+			.button {
+				background-color: #58d8a3;
+				border: none;
+				border-radius: 4px;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				cursor: pointer;
+				transition-duration: 0.4s;
+			}
+			.button1:hover {
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+			input[type=text] {
+				width: 30%;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: white;
+				background-position: 10px 10px; 
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 10px;
+			}
+			select {
+				width: 90px;
+				height: 50px;
+				padding: 8px 8px;
+				font-size: 15px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				
+			}
+			table {
+				border: 1px solid #ddd;
+				border-collapse: collapse;
+				width: 50%;
+			}
+
+			th, td {			
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even){background-color: #f2f2f2}
+
+			th {
+				background-color: #58d8a3;
+				color: white;
+			}
+
+		</style>
+	</head>
+	<body>	
+		<form action="" target="_blank" method="POST">
+			<center>
+				<div>
+				<input type="text" name="search" placeholder="Search..">
+				<button class="button button1">Search</button>
+				</div>
+				<br>
+				<div>
+					<select id="actions" name="actions">
+						<option value=""hidden>Actions</option>
+						<option value="1">Archive</option>
+						<option value="2">Delete</option>
+					</select>
+					<select id="genre" name="genre">
+						<option value=""hidden>Genre</option>
+						<option value="1">Still Life</option>
+						<option value="2">Portrait</option>
+						<option value="3">Vanitas</option>
+						<option value="4">Arabesque</option>
+					</select>
+					<button class="button button1">Apply</button>
+				</div>
+				<br>			
+				<div class="paint">
+					<table>
+						<thead><th colspan="6" style="font-size:20px"><center>PAINTINGS</center></th></thead>
+						<thead>
+							<th></th>
+							<th>Title</th>
+							<th>Artist</th>
+							<th>Year</th>
+							<th colspan="2">Genre</th>
+						</thead>
+						<tr >
+							<td><input type="checkbox" name="row1" value="1"></td>
+							<td><img src="" alt="a">Quince, Cabbage, and Cucumber</td>
+							<td>Juan Sánchez Cotán</td>
+							<td>1602</td>
+							<td>Still Life</td>
+							<td><button class="button" style="width: 60px;height:20px;padding:2px;font-size:12px;">Edit</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="row2" value="2"></td>
+							<td><img src="" alt="b">Girl In Chemise </td>
+							<td>Pablo Picasso</td>
+							<td>1905</td>
+							<td>Portrait</td>
+							<td><button class="button" style="width: 60px;height:20px;padding:2px;font-size:12px;">Edit</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="row3" value="3"></td>
+							<td><img src="" alt="c">Flowers and Skull</td>
+							<td>Adriaen van Utrecht</td>
+							<td>1642</td>
+							<td>Vanitas</td>
+							<td><button class="button" style="width: 60px;height:20px;padding:2px;font-size:12px;">Edit</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="row4" value="4"></td>
+							<td><img src="" alt="d">The Night Watch</td>
+							<td>Rembrandt van Rijn</td>
+							<td>1642</td>
+							<td>Portrait</td>
+							<td><button class="button" style="width: 60px;height:20px;padding:2px;font-size:12px;">Edit</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="row5" value="5 "></td>
+							<td><img src="" alt="e">Delphinium. Dauphinelle. Urformen der Kunst.</td>
+							<td>Karl Blossfeldt</td>
+							<td>1928</td>
+							<td>Arabesque</td>
+							<td><button class="button" style="width: 60px;height:20px;padding:2px;font-size:12px;">Edit</button></td>
+						</tr>
+					</table>					
+				</div>
+			</center>
+		</form>
+	</body>
+</html>
